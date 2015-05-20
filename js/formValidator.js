@@ -58,7 +58,7 @@ function verifyPassword(myPasswd) {
 }
 
 function verifyMobile(myMobile) {
-	var mobilePattern = /[1-9][0-9]{9}/;
+	var mobilePattern = /^[1-9][0-9]{9}$/;
 	if (!myMobile.value) {
 		displayError(myMobile, "Mobile no cannot be blank");
 	}
